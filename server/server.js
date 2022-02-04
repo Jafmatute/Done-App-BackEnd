@@ -1,5 +1,5 @@
-const express = require("express");
-const path = require("path");
+const express = require('express');
+const path = require('path');
 
 class Server {
   constructor(port) {
@@ -12,7 +12,7 @@ class Server {
   }
 
   publicFolder() {
-    const publicPath = path.resolve(__dirname, "../public");
+    const publicPath = path.resolve(__dirname, '../public');
     this.app.use(express.static(publicPath));
   }
 
